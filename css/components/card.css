@@ -1,0 +1,50 @@
+/* TODO: add CSS styling to your card */
+.card {
+  width: 30%;
+}
+
+.card:hover .save-button {
+  opacity: 1;
+}
+
+.card-white {
+  background-color: white;
+  padding: 8px;
+}
+
+.image {
+  background-image: url("https://source.unsplash.com/daily");
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 36px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.save-button {
+  background-color: white;
+  color: grey;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.save-button:hover {
+  color: black;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author a {
+  color: green;
+}
