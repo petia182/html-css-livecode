@@ -1,4 +1,9 @@
 /* TODO: add CSS styling to your card */
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card {
   width: 30%;
 }
@@ -13,11 +18,11 @@
 }
 
 .image {
-  background-image: url("https://source.unsplash.com/daily");
+  /*background-image: url("https://source.unsplash.com/daily");*/
   background-size: cover;
   background-position: center;
   height: 150px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .avatar {
@@ -43,6 +48,7 @@
 .author {
   display: flex;
   align-items: center;
+  margin-top: 16px;
 }
 
 .author a {
