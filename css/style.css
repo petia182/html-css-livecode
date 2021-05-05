@@ -1,5 +1,12 @@
+/* Importing fonts */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:400,700");
+
+/* Importing components */
 @import url("components/card.css");
+@import url("components/button.css");
+/*...
+...
+..*/
 
 /* --- Fonts --- */
 body {
@@ -8,6 +15,7 @@ body {
   margin: 0;
   background: #F4F4F4;
 }
+
 h1, h2, h3 {
   font-family: "Poppins", "sans-serif";
 }
@@ -31,8 +39,8 @@ a:hover {
 }
 
 .list-inline {
-  list-style: none;
-  padding-left: 0px;
+  list-style: none; /* removes bulletpoints from ul */
+  padding-left: 0;
   margin: 0;
   text-align: right;
   color: grey;

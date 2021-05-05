@@ -1,56 +1,70 @@
 /* TODO: add CSS styling to your card */
+
 .cards {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .card {
-  width: 30%;
-}
-
-.card:hover .save-button {
-  opacity: 1;
+	/*width: 300px;*/
+	width: 30%;
 }
 
 .card-white {
-  background-color: white;
-  padding: 8px;
+	background-color: white;
+	padding: 8px;
+	margin-bottom: 8px;
 }
 
-.image {
-  /*background-image: url("https://source.unsplash.com/daily");*/
-  background-size: cover;
-  background-position: center;
-  height: 150px;
-  margin-bottom: 8px;
+.card-white:hover .btn {
+	opacity: 1;
+	visibility: visible;
+}
+
+.card-image {
+	/* background-image: url('........');  NOT here- because all .card-image will have the same bg */
+	height: 150px;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 8px;
+}
+
+.card-user {
+	/*padding: 8px 0;*/
+	display: flex; /* putting direct child elements next to each other */
+	align-items: center; /* aligns the child elements vertically */
+}
+
+.card-user a {
+	color: green;
+	margin-left: 8px;
 }
 
 .avatar {
-  width: 36px;
-  border-radius: 50%;
-  margin-right: 8px;
+	width: 30px;
+	border-radius: 50%;
 }
 
-.save-button {
-  background-color: white;
-  color: grey;
-  padding: 8px;
-  margin: 8px;
-  border-radius: 4px;
-  opacity: 0;
-  transition: 0.3s;
+
+.btn {
+	background-color: white;
+	color: grey;
+	margin: 8px;
+	padding: 5px 8px;
+	border-radius: 4px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
 }
 
-.save-button:hover {
-  color: black;
-}
 
-.author {
-  display: flex;
-  align-items: center;
-  margin-top: 16px;
-}
 
-.author a {
-  color: green;
-}
+
+
+
+
+
+
+
+
+
